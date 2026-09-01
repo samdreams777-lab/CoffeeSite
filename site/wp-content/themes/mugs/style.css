@@ -552,16 +552,22 @@ ul li .blocRight{
 	position: fixed;
 	z-index: 1000;
 	right: 0;
+	left: auto;
 	top: 40%;
 	text-align: right;
 	margin-right: 25px;
 	opacity: 1;
-
 }
 
-.menu li{
-	line-height:25px;
-	
+/* Fix: explicitly size menu container to fit its content */
+.menu ul.mainmenu {
+	display: block;
+	width: auto;
+}
+/* Fix: override any dynamic display:table-cell from JS */
+.menu li {
+	line-height: 25px;
+	display: list-item !important;
 }
 .menu span{
 	
