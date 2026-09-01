@@ -2550,16 +2550,176 @@ a.rslides_nav.rslides1_nav.prev {
 	.info .horaires .days, .info .horaires .hours{ font-size: 14px; }
 	.info .likeus h3, .info .phone h3{ font-size: 16px; }
 }
-@media (max-width: 430px){
-	.brand-logo-svg{ width: 150px !important; }
-	.titleslide .titleunder{ top: 155px; left: 0 !important; transform: translateX(-50%) !important; }
-	.textOverparallax{ font-size: 13px; }
-	.textOverparallax h1{ font-size: 20px; }
-	h1{ font-size: 30px; }
-	.section6 .title h2, .section6 .title h1{ font-size: 24px !important; }
-	.panel .titleObj h2{ font-size: 18px; }
-	.salade, .surlepouce, .nosplats, .sushi, .enviedesushi{ transform: scale(.55); }
-	.containerText .bloc{ font-size: 13px; }
-	.info .horaires .days, .info .horaires .hours{ font-size: 13px; }
+/* ============================================================
+   MOBILE RESPONSIVE — устранение horizontal overflow
+   Фиксит: parallax layers, parassol, equipe, bg3, section5 img
+   ============================================================ */
+@media (max-width: 768px){
+	/* ---- Общий overflow-контроль ---- */
+	html, body{ overflow-x: hidden; }
+	#wrapper{ overflow-x: hidden; }
+
+	/* ---- Parallax hero: layer width 110% → 100%, убираем left offset ---- */
+	.section1 .container .scene .layer,
+	.section11 .container .scene .layer{
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.section1 .layer .far,
+	.section1 .layer .medium,
+	.section1 .layer .close{
+		left: 0 !important;
+		top: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.section11 .layer .far,
+	.section11 .layer .medium{
+		left: 0 !important;
+		top: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.section11 .layer .close{
+		left: 0 !important;
+		top: 0 !important;
+		width: 100% !important;
+	}
+
+	/* ---- .bg3: width 101% → 100% ---- */
+	.bg3{ width: 100% !important; }
+
+	/* ---- section5 parallax-window img: убираем min-width overflow ---- */
+	.section5 .section5para .parallax-window img{
+		min-width: 100% !important;
+		left: 0 !important;
+	}
+
+	/* ---- Parassol (зонтики): масштабируем и центрируем ---- */
+	.parassol img{ width: 180px !important; height: auto !important; }
+	.parassol.ombre img{ width: 180px !important; }
+	.parassol.rouge,
+	.parassol.rouge.ombre,
+	.parassol.creme,
+	.parassol.creme.ombre{ display: none !important; }
+	.parassol.vert,
+	.parassol.vert.ombre{
+		left: auto !important;
+		right: auto !important;
+	}
+	.parassol{
+		left: auto !important;
+		right: auto !important;
+	}
+
+	/* ---- Verre: скрываем на мобильных (positioned far left на desktop) ---- */
+	.verre{ display: none !important; }
+
+	/* ---- Equipe team: переключаем в нормальный поток ---- */
+	.equipe1,
+	.equipe2,
+	.equipe3{
+		position: relative !important;
+		left: auto !important;
+		right: auto !important;
+		top: auto !important;
+		width: 100% !important;
+		margin: 0 auto !important;
+		text-align: center !important;
+		z-index: 1 !important;
+	}
+	.equipe1 img,
+	.equipe2 img,
+	.equipe3 img{
+		height: auto !important;
+		width: 80vw !important;
+		max-width: 400px !important;
+	}
+	.section9 .paragraph{
+		position: relative !important;
+		left: auto !important;
+		right: auto !important;
+		bottom: auto !important;
+		width: 100% !important;
+		text-align: center !important;
+		padding: 20px !important;
+	}
+	.paragraph p{ width: 100% !important; max-width: 400px; margin: 0 auto; }
+	.paragraph h1{ text-align: center !important; }
+
+	/* ---- .calme .title: центрируем ---- */
+	.calme .title{
+		left: auto !important;
+		right: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		text-align: center !important;
+	}
+	.calme .title h1{ text-align: center !important; }
+
+	/* ---- SVG trace: центрируем ---- */
+	svg#tracesvg{
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+		width: 100% !important;
+	}
+
+	/* ---- Section footer info: фикс width ---- */
+	.horaires .title{ width: 100% !important; max-width: 400px; margin: 0 auto; }
+	.days, .hours{ float: none !important; width: 100% !important; text-align: center !important; }
+
+	/* ---- Заголовки: ограничиваем ширину ---- */
+	h1{ max-width: 100% !important; word-break: break-word; }
+	.brand-heading{ max-width: 100% !important; }
+
+	/* ---- Carousel slides: ограничиваем ширину ---- */
+	.rslides img{
+		min-width: 100% !important;
+		width: 100% !important;
+	}
+
+	/* ---- section6 ables: масштабируем SVG ---- */
+	.atable svg{ width: 100% !important; height: auto !important; }
+
+	/* ---- Section heights: уменьшаем на mobile ---- */
+	.section6{ height: auto !important; min-height: 100vh; }
+	.section9{ height: auto !important; min-height: 100vh; }
+	.section10{ height: auto !important; min-height: 15vh; }
+	.section10 .paragraph{ left: auto !important; right: auto !important; width: 90% !important; text-align: center !important; margin: 0 auto !important; top: auto !important; }
+}
+
+/* ---- 481-768px: промежуточные улучшения ---- */
+@media (min-width: 481px) and (max-width: 768px){
+	.parassol img{ width: 200px !important; }
+	.parassol.ombre img{ width: 200px !important; }
+	.equipe1 img,
+	.equipe2 img,
+	.equipe3 img{ width: 60vw !important; }
+}
+
+/* ---- ≤480px: дополнительные строгие фиксы ---- */
+@media (max-width: 480px){
+	.parassol.rouge,
+	.parassol.rouge.ombre,
+	.parassol.creme,
+	.parassol.creme.ombre{ display: none !important; }
+	.parassol.vert,
+	.parassol.vert.ombre{ display: none !important; }
+	.parassol img{ width: 120px !important; }
+	.equipe1 img,
+	.equipe2 img,
+	.equipe3 img{ width: 90vw !important; }
+	.textOverparallax{
+		left: 2% !important;
+		right: 2% !important;
+		width: 96% !important;
+		max-width: 96% !important;
+	}
+	.calme .title{
+		left: 2% !important;
+		right: 2% !important;
+		width: 96% !important;
+	}
+	.lampe{ min-width: 200px !important; }
 }
 
