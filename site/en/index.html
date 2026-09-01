@@ -6,6 +6,55 @@
 <link href="../wp-content/themes/mugs/images/icon.png" rel="shortcut icon"/>
 <link href="../wp-content/themes/mugs/images/icon_180x180.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="../wp-content/themes/mugs/style.css" rel="stylesheet" type="text/css"/>
+<style>/* Mobile responsive fixes — inline to bypass CDN cache */
+@media(max-width:768px){
+html,body,#wrapper{overflow-x:hidden!important}
+.section1 .container .scene .layer,.section11 .container .scene .layer{width:100%!important;height:100%!important}
+.section1 .layer .far,.section1 .layer .medium,.section1 .layer .close{left:0!important;top:0!important;width:100%!important;height:100%!important}
+.section11 .layer .far,.section11 .layer .medium{left:0!important;top:0!important;width:100%!important;height:100%!important}
+.section11 .layer .close{left:0!important;top:0!important;width:100%!important}
+.bg3{width:100%!important}
+.section5 .section5para .parallax-window img{min-width:100%!important;left:0!important}
+.parassol img{width:180px!important;height:auto!important}
+.parassol.ombre img{width:180px!important}
+.parassol.rouge,.parassol.rouge.ombre,.parassol.creme,.parassol.creme.ombre{display:none!important}
+.parassol.vert,.parassol.vert.ombre{left:auto!important;right:auto!important}
+.parassol{left:auto!important;right:auto!important}
+.verre{display:none!important}
+.equipe1,.equipe2,.equipe3{position:relative!important;left:auto!important;right:auto!important;top:auto!important;width:100%!important;margin:0 auto!important;text-align:center!important;z-index:1!important}
+.equipe1 img,.equipe2 img,.equipe3 img{height:auto!important;width:80vw!important;max-width:400px!important}
+.section9 .paragraph{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;width:100%!important;text-align:center!important;padding:20px!important}
+.paragraph p{width:100%!important;max-width:400px;margin:0 auto}
+.paragraph h1{text-align:center!important}
+.calme .title{left:auto!important;right:auto!important;width:100%!important;max-width:100%!important;text-align:center!important}
+.calme .title h1{text-align:center!important}
+svg#tracesvg{left:50%!important;transform:translateX(-50%)!important;width:100%!important}
+.horaires .title{width:100%!important;max-width:400px;margin:0 auto}
+.days,.hours{float:none!important;width:100%!important;text-align:center!important}
+h1{max-width:100%!important;word-break:break-word}
+.brand-heading{max-width:100%!important}
+.rslides img{min-width:100%!important;width:100%!important}
+.atable svg{width:100%!important;height:auto!important}
+.section6{height:auto!important;min-height:100vh}
+.section9{height:auto!important;min-height:100vh}
+.section10{height:auto!important;min-height:15vh}
+.section10 .paragraph{left:auto!important;right:auto!important;width:90%!important;text-align:center!important;margin:0 auto!important;top:auto!important}
+.menu{max-width:calc(100vw - 30px)!important;left:auto!important;right:0!important;overflow-x:hidden!important}
+}
+@media(min-width:481px) and (max-width:768px){
+.parassol img{width:200px!important}
+.parassol.ombre img{width:200px!important}
+.equipe1 img,.equipe2 img,.equipe3 img{width:60vw!important}
+}
+@media(max-width:480px){
+.parassol.rouge,.parassol.rouge.ombre,.parassol.creme,.parassol.creme.ombre{display:none!important}
+.parassol.vert,.parassol.vert.ombre{display:none!important}
+.parassol img{width:120px!important}
+.equipe1 img,.equipe2 img,.equipe3 img{width:90vw!important}
+.textOverparallax{left:2%!important;right:2%!important;width:96%!important;max-width:96%!important}
+.calme .title{left:2%!important;right:2%!important;width:96%!important}
+.lampe{min-width:200px!important}
+}</style>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="../wp-content/themes/mugs/images/fb.jpg" property="og:image"/>
 <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
