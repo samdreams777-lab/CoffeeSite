@@ -2527,6 +2527,9 @@ a.rslides_nav.rslides1_nav.prev {
 	.brand-logo-svg{ width: 200px !important; }
 }
 @media (max-width: 768px){
+	/* ---- Mobile menu: ограничить ширину, предотвратить overflow ---- */
+	.menu{ max-width: calc(100vw - 30px) !important; left: auto !important; right: 0 !important; overflow-x: hidden !important; }
+
 	/* логотип: масштаб + сброс VI desktop-сдвига -120px (побеждает inline через !important) */
 	.brand-logo-svg{ width: 180px !important; }
 	.titleslide .logo{ transform: translateX(0) !important; }
