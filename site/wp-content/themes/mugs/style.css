@@ -561,8 +561,8 @@ ul li .blocRight{
 
 /* Fix: explicitly size menu container to fit its content */
 .menu ul.mainmenu {
-	display: block;
-	width: auto;
+	display: block !important;
+	width: auto !important;
 }
 /* Fix: override any dynamic display:table-cell from JS */
 .menu li {
