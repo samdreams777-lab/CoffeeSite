@@ -8,3 +8,15 @@ build/
 __pycache__/
 *.pyc
 .Archive/temp/
+
+Photos/
+Архив/
+nul
+
+!site/wp-includes/css/dist/
+!site/wp-includes/css/dist/block-library/
+!site/wp-includes/css/dist/block-library/style.min.css
+!site/wp-content/plugins/sitepress-multilingual-cms/dist/
+!site/wp-content/plugins/sitepress-multilingual-cms/dist/css/
+!site/wp-content/plugins/sitepress-multilingual-cms/dist/css/blocks/
+!site/wp-content/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css
