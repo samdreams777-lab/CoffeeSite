@@ -551,23 +551,65 @@ ul li .blocRight{
 	mix-blend-mode: difference;
 	position: fixed;
 	z-index: 1000;
-	right: 0;
+	top: 50%;
+	right: 15px;
 	left: auto;
-	top: 40%;
+	transform: translateY(-50%);
 	text-align: right;
-	margin-right: 25px;
 	opacity: 1;
+	width: auto;
 }
 
-/* Fix: explicitly size menu container to fit its content */
-.menu ul.mainmenu {
-	display: block !important;
+/* ============================================
+   NAVIGATION MENU — CORRECTED LAYOUT
+   Target geometry: vertical column, right side, centered viewport
+   Right: 15px, top: 50% + translateY(-50%)
+   ============================================ */
+
+/* Wrapper: force correct positioning regardless of parent */
+body .menu {
+	position: fixed !important;
+	top: 50% !important;
+	right: 15px !important;
+	left: auto !important;
+	bottom: auto !important;
 	width: auto !important;
+	min-width: 0 !important;
+	max-width: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	transform: translateY(-50%) !important;
+	opacity: 1 !important;
+	z-index: 1000 !important;
+	mix-blend-mode: difference !important;
 }
-/* Fix: override any dynamic display:table-cell from JS */
-.menu li {
-	line-height: 25px;
+
+/* Menu list: vertical flex column, no stretching */
+body .menu > ul {
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: flex-end !important;
+	gap: 10px !important;
+	width: auto !important;
+	max-width: none !important;
+	min-width: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none !important;
+}
+
+/* Menu items: natural width, no table-cell */
+body .menu > ul > li,
+body .menu li {
 	display: list-item !important;
+	width: auto !important;
+	min-width: 0 !important;
+	max-width: none !important;
+	flex: 0 0 auto !important;
+	font-weight: 400 !important;
+	line-height: 25px !important;
+	text-align: right !important;
+	/* Override WordPress plugin global: li { display: table-cell; width: 1%; } */
 }
 .menu span{
 	
