@@ -2554,6 +2554,8 @@ a.rslides_nav.rslides1_nav.prev {
 	/* footer / contact */
 	.info .horaires .days, .info .horaires .hours{ font-size: 14px; }
 	.info .likeus h3, .info .phone h3{ font-size: 16px; }
+	/* ---- lampe-section3: поднять лампу на mobile ---- */
+	.lampe{ bottom: 60% !important; }
 }
 /* ============================================================
    MOBILE RESPONSIVE — устранение horizontal overflow
