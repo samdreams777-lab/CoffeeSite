@@ -2632,6 +2632,7 @@ a.rslides_nav.rslides1_nav.prev {
 		margin: 0 auto 30px auto !important;
 		text-align: center !important;
 		z-index: 1 !important;
+		transform: none !important;
 	}
 	.equipe1 img,
 	.equipe2 img,
