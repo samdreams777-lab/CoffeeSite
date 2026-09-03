@@ -2726,5 +2726,16 @@ a.rslides_nav.rslides1_nav.prev {
 		width: 96% !important;
 	}
 	.lampe{ min-width: 200px !important; }
+	/* Hide pace progress on mobile - causes horizontal overflow */
+	.pace,
+	.pace-progress,
+	.pace-progress-inner,
+	#pace-double{ display: none !important; }
+}
+@media (max-width: 768px){
+	.pace,
+	.pace-progress,
+	.pace-progress-inner,
+	#pace-double{ display: none !important; }
 }
 
