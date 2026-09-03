@@ -2687,7 +2687,8 @@ a.rslides_nav.rslides1_nav.prev {
 	.atable svg{ width: 100% !important; height: auto !important; }
 
 	/* ---- Section heights: уменьшаем на mobile ---- */
-	.section6{ height: auto !important; min-height: 100vh; }
+	/* ---- Section6: min-height 4000px для полного scroll-driven animation ---- */
+	.section6{ height: auto !important; min-height: 4000px !important; }
 	.section9{ height: auto !important; min-height: 100vh; }
 	.section10{ height: auto !important; min-height: 15vh; }
 	.section10 .paragraph{ left: auto !important; right: auto !important; width: 90% !important; text-align: center !important; margin: 0 auto !important; top: auto !important; }
