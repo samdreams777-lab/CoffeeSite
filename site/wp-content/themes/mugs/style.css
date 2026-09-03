@@ -175,16 +175,14 @@ hr {
 }
 h1{
 	font-size: 30px;
-	line-height: 46px; 
-	text-transform:uppercase;
+	line-height: 46px;
 	margin-bottom: 20px;
 	font-weight: bold;
 }
 
 h2{
 	font-size: 26px;
-	line-height: 44px; 
-	text-transform:uppercase; 
+	line-height: 44px;
 	margin-bottom: 20px;
 	font-weight: bold;
 }
@@ -1387,6 +1385,7 @@ h1{
 .calme .title h1{
 	color:#ffe09c;
 	margin-bottom: 15px;
+	text-transform: uppercase;
 }
 
 .section5 .section5para{
@@ -1816,7 +1815,7 @@ svg#tracesvg{
 .section7 .textOverparallax p, .section7 .textOverparallax h1{
 	color:#000;
 	text-align: left;
-
+	text-transform: uppercase;
 }
 
 .section7 .parallax-window{
@@ -1960,6 +1959,8 @@ a.rslides_nav.rslides1_nav.prev {
 .paragraph p{
 	color:#000;
 	width: 320px;
+	font-size: 16px;
+	line-height: 1.65;
 }
 /* //////////////////////////////////////////////////////////////////////
 //  03 - SECTION 10
@@ -2537,7 +2538,7 @@ a.rslides_nav.rslides1_nav.prev {
 	.titleslide .logo{ transform: translateX(0) !important; }
 	.titleslide .titleunder{ top: 175px; left: 0 !important; transform: translateX(-50%) !important; }
 	/* текст поверх фото */
-	.textOverparallax{ max-width: 90%; left: 5% !important; right: 5%; font-size: 14px; line-height: 1.45; }
+	.textOverparallax{ max-width: 90%; left: 5% !important; right: 5%; font-size: 16px; line-height: 1.6; }
 	.textOverparallax h1{ font-size: 24px; margin-bottom: 8px; }
 	.section3 .textOverparallax, .section4 .textOverparallax, .section5 .textOverparallax, .section6 .textOverparallax{ left: 5% !important; right: 5%; }
 	/* заголовки секций */
@@ -2546,7 +2547,7 @@ a.rslides_nav.rslides1_nav.prev {
 	/* панели section2 */
 	.panel{ padding: 20px; }
 	.panel .titleObj h2{ font-size: 20px; }
-	.panel .pObj p{ font-size: 14px; line-height: 1.4; }
+	.panel .pObj p{ font-size: 16px; line-height: 1.6; }
 	/* intro text */
 	.containerText .bloc{ font-size: 14px; line-height: 1.5; padding: 0 15px; }
 	/* меню SVG — масштаб под мобильный viewport */
