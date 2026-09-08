@@ -30,8 +30,10 @@ jobs:
       - name: Verify site structure
         run: |
           echo "Checking production site..."
-          test -f site/index.html
-          echo "✓ site/index.html found"
+          test -f site/vi/index.html
+          echo "✓ site/vi/index.html found"
+          test -f site/en/index.html
+          echo "✓ site/en/index.html found"
           echo "Site files:"
           find site -maxdepth 2 -type f | sort | head -200
 
